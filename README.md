@@ -16,26 +16,26 @@
 
 <br>
 
-<p align="center">
+<!-- <p align="center">
   <img alt="Kibexinhos PetShop" src="https://i.imgur.com/WW1KIgD.png" width="100%">
 </p>
 
 <p align="center">
   <img alt="Kibexinhos PetShop" src="https://i.imgur.com/ECkchoP.png" width="100%">
-</p>
+</p> -->
 
 ## 🚀 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- Typescript
+<!-- - Typescript
 - React.JS (Functional Components, Hooks)
 - Sass
-- API bit.ly
+- API bit.ly -->
 
 ## 💻 Projeto
 
-Feito para praticar persistência de dados em Local Storage. 💰
+Projeto desenvolvido como trabalho de conclusão de curso do Técnico em Desenvolvimento de Sistemas da ETEC Jaú 2022. 💰
 
 ## :memo: Licença
 
