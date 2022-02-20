@@ -1,1 +1,0 @@
-noticia específica

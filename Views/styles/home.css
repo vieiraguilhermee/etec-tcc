@@ -1,0 +1,185 @@
+.header {
+  background-color: var(--primary-color);
+  width: 100%;
+  height: 20vh;
+}
+
+.nav {
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.nav .imageLogo {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.nav .imageLogo img {
+  width: 100%;
+  max-width: 150px;
+}
+
+.nav .inputSearch {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.nav .inputSearch input[type="search"] {
+  width: 100%;
+  max-width: 500px;
+  height: 45px;
+  padding: 0 1rem;
+  font-size: 1rem;
+  border-radius: 7px;
+  border: 1px solid white;
+  outline: none;
+}
+
+.nav .inputSearch input[type="search"]:focus {
+  border: 3px solid yellow;
+}
+
+.nav .inputSearch input[type="search"]::placeholder {
+  color: rgba(128, 128, 128, 0.7);
+  font-weight: bold;
+}
+
+.nav .account {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: white;
+}
+
+.nav .account a {
+  font-size: 1rem;
+  color: white;
+  position: relative;
+}
+
+.nav .account a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: white;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.nav .account a:hover::before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.content .sectionTitle {
+  text-align: center;
+  margin: 4rem 0 2rem;
+  font-size: 1.5rem;
+}
+
+.content .offersDay,
+.content .topDogs,
+.content .topCats {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  margin-bottom: 2rem;
+}
+
+.content .offersDay .offersCard,
+.content .topDogs .topDogsCard,
+.content .topCats .topCatsCard {
+  width: 90%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  border-radius: 7px;
+  padding: 1rem;
+  position: relative;
+}
+
+.content .offersDay .offersCard p,
+.content .topDogs .topDogsCard p,
+.content .topCats .topCatsCard p {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.3rem 0.8rem;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 7px;
+}
+
+.content .offersDay .offersCard img,
+.content .topDogs .topDogsCard img,
+.content .topCats .topCatsCard img {
+  width: 100%;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.content .offersDay .offersCard main h2,
+.content .topDogs .topDogsCard main h2,
+.content .topCats .topCatsCard main h2 {
+  font-size: 1.4rem;
+}
+
+.content .offersDay .offersCard main h4,
+.content .topDogs .topDogsCard main h4,
+.content .topCats .topCatsCard main h4 {
+  font-size: 0.9rem;
+  line-height: 24px;
+}
+
+.content .offersDay .offersCard main span,
+.content .topDogs .topDogsCard main span,
+.content .topCats .topCatsCard main span {
+  font-weight: bold;
+}
+
+.content .offersDay .offersCard .cartButton,
+.content .topDogs .topDogsCard .cartButton,
+.content .topCats .topCatsCard .cartButton {
+  background-color: var(--primary-color);
+  border: 0;
+  outline: none;
+  width: 100%;
+  height: 45px;
+  color: white;
+  font-weight: bold;
+  border-radius: 7px;
+  transition: 400ms;
+}
+
+.content .offersDay .offersCard .cartButton:hover,
+.content .topDogs .topDogsCard .cartButton:hover,
+.content .topCats .topCatsCard .cartButton:hover {
+  background-color: var(--secondary-color);
+}
